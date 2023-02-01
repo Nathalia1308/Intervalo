@@ -48,8 +48,7 @@ namespace WindowsFormsApp1
             this.btnNao.Text = "Não";
             this.btnNao.UseVisualStyleBackColor = true;
             this.btnNao.UseWaitCursor = true;
-            this.btnNao.Click += new System.EventHandler(this.btnNao_Click);
-            this.btnNao.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnNao_MouseMove);
+            this.btnNao.MouseHover += new System.EventHandler(this.btnNao_MouseHover);
             // 
             // btnSim
             // 
@@ -91,8 +90,8 @@ namespace WindowsFormsApp1
 
         #endregion
         private System.Windows.Forms.Button btnSim;
-        private System.Windows.Forms.TextBox txtPergunta;
         private System.Windows.Forms.Button btnNao;
+        private System.Windows.Forms.TextBox txtPergunta;
     }
 }
 

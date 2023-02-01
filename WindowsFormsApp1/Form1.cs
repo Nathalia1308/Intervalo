@@ -32,23 +32,14 @@ namespace WindowsFormsApp1
         private void btnSim_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Obrigadinho!! <3");
-
+            Application.Exit();
         }
 
-        private void btnNao_CursorChanged(object sender, EventArgs e)
-        {
-           
-            
-        }
-
-        private void btnNao_MouseMove(object sender, MouseEventArgs e)
-        {
-           
-        }
+      
 
         private void txtPergunta_TextChanged(object sender, EventArgs e)
         {
-            txtPergunta.Enabled = false;
+            
         }
         public static Int16 GetNumRandom(Int16 Min, Int16 Max)
         {
@@ -57,7 +48,7 @@ namespace WindowsFormsApp1
             
         }
 
-        private void btnNao_Click(object sender, EventArgs e)
+        private void btnNao_MouseHover(object sender, EventArgs e)
         {
             int x, y, x_, y_;
 
@@ -68,8 +59,6 @@ namespace WindowsFormsApp1
             y_ = GetNumRandom((short)x, (short)y);
 
             btnNao.Location = new System.Drawing.Point(x_, y_);
-
-            
         }
     }
 }

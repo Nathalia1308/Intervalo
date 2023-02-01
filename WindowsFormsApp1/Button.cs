@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
     {
         protected override void OnMouseHover(System.EventArgs e)
         {
-            Cursor = Cursors.Hand;
+            
         }
     }
 }
